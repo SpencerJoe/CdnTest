@@ -21,8 +21,8 @@ namespace GeolocationTestHarness
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            BundleTable.Bundles.UseCdn = true;
-            BundleTable.EnableOptimizations = true;
+            BundleTable.Bundles.UseCdn = false;
+            BundleTable.EnableOptimizations = false;
         }
 
         protected void Application_BeginRequest()
