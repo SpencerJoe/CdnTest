@@ -1,6 +1,7 @@
 ﻿using GeolocationTestHarness.Adapters;
 using GeolocationTestHarness.Configuration;
 using System.Configuration;
+using System.Net;
 using System.Web.Mvc;
 
 namespace GeolocationTestHarness.Controllers
@@ -23,6 +24,12 @@ namespace GeolocationTestHarness.Controllers
                 cookiesAdapter.GenerateDummyCookies(config.DummyCookieName, config.DummyCookieSize);
 
             return View();
+        }
+
+        [AllowAnonymous]
+        public HttpStatusCodeResult Ping()
+        {
+            return new HttpStatusCodeResult(HttpStatusCode.NoContent);
         }
     }
 }
