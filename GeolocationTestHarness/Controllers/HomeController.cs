@@ -1,11 +1,11 @@
 ﻿using GeolocationTestHarness.Adapters;
 using GeolocationTestHarness.Configuration;
-using System.Configuration;
 using System.Net;
 using System.Web.Mvc;
 
 namespace GeolocationTestHarness.Controllers
 {
+    [AllowAnonymous]
     public class HomeController : Controller
     {
         GeolocationTestHarnessConfiguraton config = GeolocationTestHarnessConfiguraton.Current;
