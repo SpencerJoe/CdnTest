@@ -29,7 +29,7 @@ namespace GeolocationTestHarness.Controllers
         [AllowAnonymous]
         public HttpStatusCodeResult Ping()
         {
-            return new HttpStatusCodeResult(HttpStatusCode.NoContent);
+            return new HttpStatusCodeResult(HttpStatusCode.OK);
         }
     }
 }
