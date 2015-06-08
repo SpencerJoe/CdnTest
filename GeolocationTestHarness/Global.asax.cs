@@ -11,7 +11,7 @@ namespace GeolocationTestHarness
     public class Global : System.Web.HttpApplication
     {
         private static readonly ILog logger = LogManager.GetLogger(typeof(HttpApplication));
-
+//blah
         protected void Application_Start(object sender, EventArgs e)
         {
             log4net.Config.XmlConfigurator.Configure();
